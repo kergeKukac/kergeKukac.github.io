@@ -1,0 +1,51 @@
+body {
+    width: 1600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;    
+}
+
+#slideshow {
+    height: 100px;
+    background: grey;
+}
+
+#mainviewer {
+    height: 650px;
+    background: yellow; 
+}
+
+#galery {
+    height: 160px;
+    background: blue;
+}
+
+#mainImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 650px;
+    width: 1500px;
+    object-fit: cover;
+    left: 210px;
+}
+
+#arrowBackward {
+    position: relative;
+    top: -325px;
+    left: 17px;
+}
+
+#arrowForward { 
+    position: relative; 
+    top: -325px;
+    left: 1548px;
+    transform: rotate(0.5turn);
+}
+
+#story {
+    position: relative;
+    text-align: center;
+    top: -150px;
+    color: wheat;
+}
