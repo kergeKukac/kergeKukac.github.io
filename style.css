@@ -8,6 +8,7 @@ body {
 #slideshow {
     height: 100px;
     background: grey;
+    margin: 5px 0px 5px 0px;
 }
 
 #mainviewer {
@@ -17,7 +18,12 @@ body {
 
 #galery {
     height: 160px;
+    width: 1400px;
+    margin: auto;
     background: blue;
+    display: flex;
+    justify-content: center;
+    margin: 5px auto 5px auto;
 }
 
 #mainImage {
@@ -30,10 +36,21 @@ body {
     left: 210px;
 }
 
+.thumbnails {
+    margin: auto 10px auto 10px; 
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    cursor:pointer;
+    border: solid 1px black;
+    position: relative;
+}
+
 #arrowBackward {
     position: relative;
     top: -325px;
     left: 17px;
+    cursor:pointer;
 }
 
 #arrowForward { 
@@ -41,11 +58,21 @@ body {
     top: -325px;
     left: 1548px;
     transform: rotate(0.5turn);
+    cursor:pointer;
 }
 
 #story {
     position: relative;
     text-align: center;
     top: -150px;
-    color: wheat;
+    color: black;
+}
+  
+.thumbTitle {
+    display: none;
+    position: relative;
+    color: black;
+    background: gray;
+    bottom: 100px;
+    text-align: center;
 }
