@@ -2,38 +2,50 @@ body {
     width: 1600px;
     margin: auto;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
+    background: rgb(80,80,80);
+    background: linear-gradient(90deg, rgba(80,80,80,1) 0%, rgba(119,119,223,1) 50%, rgba(80,80,80,1) 100%);
+    font-family: 'Balsamiq Sans', cursive;
+    letter-spacing: 1px;
 }
-
-#slideshow {
+    
+#slideContainer {
     height: 100px;
     background: grey;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px 5px 0px; 
+    box-shadow: 5px 5px 10px;
 }
 
 #mainviewer {
     height: 650px;
-    background: yellow; 
+    background: rgba(159, 159, 159, 0.46);
+    border: solid 2px black; 
+    box-shadow: 5px 5px 10px;
 }
 
 #galery {
     height: 160px;
     width: 1400px;
     margin: auto;
-    background: blue;
     display: flex;
+    background: blue;
     justify-content: center;
     margin: 5px auto 5px auto;
+    border: solid 2px black;
+    box-shadow: 5px 5px 10px;
+    background: rgb(80,80,80);
+    background: linear-gradient(90deg, rgba(80,80,80,1) 0%, rgba(119,119,223,1) 50%, rgba(80,80,80,1) 100%);
 }
 
 #mainImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 650px;
+    height: 648px;
     width: 1500px;
     object-fit: cover;
     left: 210px;
+    border: solid 2px black;
 }
 
 .thumbnails {
@@ -44,6 +56,8 @@ body {
     cursor:pointer;
     border: solid 1px black;
     position: relative;
+    transition: 0.3s;
+    box-shadow: 5px 5px 10px;
 }
 
 #arrowBackward {
@@ -62,17 +76,33 @@ body {
 }
 
 #story {
-    position: relative;
+    position: absolute;
     text-align: center;
-    top: -150px;
-    color: black;
+    width: 1596px;
+    top: 646px;
+    color: #7FDBFF;
+    background: black;
+    opacity: 0.5;
 }
-  
-.thumbTitle {
-    display: none;
+
+#slideImage {
+    margin-left: auto;
+    margin-right: auto;
+    height: 96px;
+    width: 1596px;
+    object-fit: cover;
     position: relative;
-    color: black;
-    background: gray;
-    bottom: 100px;
+    border: solid 2px black;
+}
+
+#mainTitle {
+    line-height: 100px;
+    position: relative;
     text-align: center;
+    width: 1600px;
+    height: 100px;
+    top: -124px;
+    color: #7FDBFF;
+    background: black;
+    opacity: 0.5;
 }

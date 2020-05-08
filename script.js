@@ -39,7 +39,6 @@ let imageData = [
 let currentPhoto = 0;
 let currentHover = 0;
 
-
 let loadFrame = (photoNumber) => {
     $('#mainImage').attr('src', imageData[photoNumber].photo);
     $('#title').text(imageData[photoNumber].title);
@@ -49,7 +48,8 @@ let loadFrame = (photoNumber) => {
     $('.thumbnails').css({"border":"solid 1px black"});
     $('#' + photoNumber).css({"border":"solid 5px black"});
 }
-
+$('#slideImage').attr('src', imageData[1].photo);
+  
 loadFrame(currentPhoto);
 
 for (let i = 0; i < imageData.length; i++) {
@@ -81,3 +81,15 @@ $(".thumbnails").hover(function() {
 }, function() {
     $(this).css('cursor','auto');
 });
+
+var cnt = imageData.length;
+
+$(function() {
+    setInterval(Slider, 2000);
+});
+
+function Slider() {
+    $("#slideImage").show("fast", function() {
+        $(this).attr("src", imageData[(imageData.length++) % cnt].photo).show();
+});
+}
